@@ -61,4 +61,9 @@
   defaultBranch = master
 [user]
 	email = florian.faneuil@gmail.com
-	name = Florian Faneuil
+	name = FlorianFaneuil
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
